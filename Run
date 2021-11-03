@@ -1,0 +1,2 @@
+#!/bin/rc
+for(a in cast*.env) { b=`{basename $a .env}; ./mkcast $a >$b.html}

@@ -1,0 +1,23 @@
+#!/bin/rc
+. ./$1
+cat << !
+<html>
+<head>
+<title>Interview: $title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+<img class="logo" src="images/site-logo-250.png" />
+<h4>Interview: $title</h4>
+<img class="person" src="$image" width="250" />
+!
+echo $description
+cat << !
+<audio controls>
+	<source src="$mp3" />
+</audio>
+</body>
+</html>
+!
