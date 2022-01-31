@@ -10,6 +10,8 @@ cat << !
 </head>
 <body>
 <img class="logo" src="images/site-logo-250.png" />
+<br />
+<p>$date</p>
 <h4>Interview: $title</h4>
 <img class="person" src="$image" width="250" />
 !
